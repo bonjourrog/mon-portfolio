@@ -1,9 +1,13 @@
+import {BrowserRouter} from 'react-router-dom';
 import './App.css'
+import { AppRoutes } from './App.routes';
 
 function App() {
 
   return (
-    <p className='text-red-500 font-bold'>App works!</p>
+    <BrowserRouter>
+      <AppRoutes/>
+    </BrowserRouter>
   )
 }
 
