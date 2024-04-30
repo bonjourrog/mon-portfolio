@@ -1,0 +1,5 @@
+.home{
+    background-color: rgb(17, 17, 19);
+    color: white;
+    /* @apply bg-zinc-950 text-white; */
+}
