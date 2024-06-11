@@ -4,7 +4,7 @@ import './Home.css';
 import { HomeProps } from './props';
 
 const Home: React.FC<HomeProps> = ()=>{
-    return <div className='home'>
+    return <div className='home' style={{height:"100vh", display:"flex", alignItems:"center", justifyContent:"center"}}>
         <Header/>
         <Hero/>
     </div>
