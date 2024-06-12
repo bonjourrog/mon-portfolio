@@ -5,9 +5,11 @@ import { AppRoutes } from './App.routes';
 function App() {
 
   return (
-    <BrowserRouter>
-      <AppRoutes/>
-    </BrowserRouter>
+    <div className='App'>
+        <BrowserRouter>
+        <AppRoutes/>
+      </BrowserRouter>
+    </div>
   )
 }
 

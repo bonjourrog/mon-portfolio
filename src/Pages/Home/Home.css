@@ -1,7 +1,44 @@
 .home{
+    position: relative;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    padding-bottom: 10em;
     background-color: #1f1e1d;
     color: white;
+    overflow-x:hidden;
+    overflow-y: auto;
+}
+.projects{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    width: auto;
+}
+.project{
+    width: 20em;
+    height: 20em;
+    margin: 0 auto;
+    border-radius: .5em;
+    overflow: hidden;
+    cursor: pointer;
+}
+.project>img{
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width:1024px) {
+    .projects__list{
+        grid-template-columns: 20em 20em;
+        gap: 5em;
+    }
+    .project{
+        width: 100%;
+    }
 }
