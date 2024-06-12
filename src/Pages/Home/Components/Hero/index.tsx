@@ -1,6 +1,12 @@
 import './Hero.css';
 import { HeroProps } from './props';
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaCss3 } from "react-icons/fa";
+import { FaWordpress } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 
 const Hero: React.FC<HeroProps> = ()=>{
     return <section className='hero'>
@@ -14,8 +20,12 @@ const Hero: React.FC<HeroProps> = ()=>{
                     <FaLongArrowAltRight/>
                 </button>
         </div>
-        <ul>
-            
+        <ul className='tech-list'>
+            <li><FaReact className='tech-item'/></li>
+            <li><IoLogoJavascript className='tech-item'/></li>
+            <li><FaCss3 className='tech-item'/></li>
+            <li><FaWordpress className='tech-item'/></li>
+            <li><FaGithub className='tech-item'/></li>
         </ul>
     </section>
 }

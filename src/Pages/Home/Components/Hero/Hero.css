@@ -27,6 +27,12 @@
 .see-p::after:hover{
     @apply w-full;
 }
+.tech-list{
+    @apply flex items-center justify-around absolute bottom-0 left-0 w-full min-h-56 bg-zinc-900 opacity-40;
+}
+.tech-item{
+    font-size: 5em;
+}
 @media screen and (max-width:650px) {
     .hero__content{
         @apply w-full px-10;
