@@ -1,4 +1,4 @@
 .home{
     background-color: #1f1e1d;
-    @apply flex flex-col pb-40 relative min-h-screen text-white;
+    @apply flex flex-col relative min-h-screen text-white;
 }

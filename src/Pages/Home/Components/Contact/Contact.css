@@ -1,0 +1,39 @@
+.contact{
+    @apply relative w-full min-h-screen bg-white text-gray-800;
+}
+.contact > div{
+    @apply absolute -top-20 left-1/2 transform -translate-x-1/2 w-2/3 py-32 bg-white shadow-md shadow-gray-100 rounded-md;
+}
+.form{
+    @apply relative w-2/3 flex flex-col items-center justify-center;
+}
+.contact__headline{
+    @apply w-96 mb-14 text-6xl font-extrabold text-gray-800;
+}
+.form__field{
+    @apply border h-10 w-96 p-8 rounded-md; 
+}
+.error-msg{
+    @apply w-96 pl-4 pt-1 text-xs text-red-500 italic;
+}
+.form__field--textarea{
+    @apply min-h-40;
+}
+.socials{
+    @apply absolute -right-20 top-1/2 transform -translate-y-1/2 w-96 h-52 p-12 bg-[#1f1e1d] rounded-md text-white;
+}
+.socials>h2{
+    @apply font-extrabold text-3xl;
+}
+.socials__icon{
+    @apply text-4xl opacity-60 transition-all duration-300 ease-in-out;
+}
+.socials>div>a{
+    @apply cursor-pointer;
+}
+.socials>div{
+    @apply flex mt-8 gap-6;
+}
+.socials__icon:hover{
+    @apply opacity-100;
+}
