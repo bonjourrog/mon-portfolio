@@ -1,4 +1,5 @@
 import Header from '../../Components/Header';
+import Experience from './Components/Experience';
 import Hero from './Components/Hero';
 import Projects from './Components/Projects';
 import './Home.css';
@@ -9,6 +10,7 @@ const Home: React.FC<HomeProps> = ()=>{
         <Header/>
         <Hero/>
         <Projects/>
+        <Experience/>
     </div>
 }
 export default Home;

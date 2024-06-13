@@ -1,0 +1,21 @@
+.experience{
+    @apply w-full h-screen mt-40;
+}
+.experience__headline{
+    @apply block w-full pl-40 text-8xl font-extrabold;
+}
+.experience>ul{
+    @apply flex flex-col items-start justify-center gap-32 w-3/4 h-full mx-auto;
+}
+.experience>ul>li{
+    @apply relative w-full;
+}
+.experience>ul>li>h3{
+    @apply text-2xl font-bold;
+}
+.experience>ul>li>p{
+    @apply pl-10 font-thin italic;
+}
+.experience>ul>li>span{
+    @apply absolute right-0 top-0 text-blue-400 text-sm;
+}
