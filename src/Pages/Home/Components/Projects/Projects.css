@@ -1,51 +1,110 @@
 .projects{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding:10em 0em;
-    background-color: white;
+    @apply w-full flex flex-col items-center justify-center py-40 bg-white;
 }
 .projects__list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2em;
-    width: auto;
+    @apply grid grid-cols-2 gap-10;
 }
 .project{
-    width: 20em;
-    height: 20em;
-    margin: 0 auto;
-    border-radius: .5em;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: .3em .3em 1em rgba(0, 0,  0, 0.1);
+    @apply relative w-[25em] h-[25em] mx-auto rounded-lg overflow-hidden cursor-pointer shadow-md shadow-gray-200 bg-black;
+}
+.project:first-child{
+    @apply h-40 p-6 text-lg font-extrabold text-gray-700 shadow-none cursor-default bg-white;
+}
+.project:nth-child(2){
+    animation:  move-up linear;
+    animation-timeline: view()
+}
+.project:nth-child(3){
+    @apply -mt-72;
+}
+.project:nth-child(4){
+    animation:  move-up-slower linear;
+    animation-timeline: view()
+}
+@keyframes move-up {
+    from{transform: translateY(0em);}
+    to{transform: translateY(-10em);}
+}
+@keyframes move-up-slower {
+    from{transform: translateY(0em);}
+    to{transform: translateY(-6em);}
+}
+.project:last-child{
+    animation: move-down linear;
+    animation-timeline: view();
+    @apply -mt-72;
+}
+@keyframes move-down{
+    from{transform: translateY(0em);}
+    to{transform: translateY(6em);}
+}
+.project__icon{
+    @apply text-3xl text-blue-400;
 }
 .project>img{
-    height: 100%;
-    object-fit: cover;
-    transition: all .3s ease-in-out;
+    @apply h-full object-cover transition-all duration-300 ease-in-out;
 }
 .project:hover>img{
-    transform:  scale(1.1);
+    @apply transform scale-110 opacity-60;
 }
 .projects__headline{
-    display: block;
-    width: 100%;
-    padding-left: 1.5em;
-    margin-bottom: 1em;
-    font-size: 7em;
-    font-weight: bolder;
-    opacity: 1;
-    color: #1f1e1d;
+    @apply block w-full pl-40 mb-40 text-9xl font-extrabold opacity-100 text-[#1f1e1d];
 }
 @media screen and (max-width:1024px) {
     .projects__list{
-        grid-template-columns: 20em 20em;
-        gap: 5em;
+        width: 80%;
+        grid-template-columns: repeat(auto-fill, minmax(20em, 2fr));
+        gap: 3em;
     }
     .project{
+        @apply w-full h-auto;
+    }
+    .project:last-child{
+        animation: none;
+    }
+    .project:nth-child(3){
+        @apply -mt-20 h-full;
+    }
+    .project:last-child{
+        @apply m-0;
+    }
+}
+@media screen and (max-width:800px) {
+    .projects__list{
         width: 100%;
+        grid-template-columns: 80%;
+        justify-content: center;
+        gap: 0;
+    }
+    .project{   
+        @apply m-0 rounded-none;
+    }
+    .project:nth-child(2){
+        animation: none;
+    }
+    .project:nth-child(3){
+        @apply m-0;
+    }
+    .project:nth-child(4){
+        @apply m-0 p-0;
+    }
+    .project:last-child{
+        @apply mt-0;
+    }
+    .projects__headline{
+        @apply mb-0 pl-20;
+    }
+}
+@media screen and (max-width:600px) {
+    
+    .projects{
+        @apply pb-0 pt-20;
+    }
+    .projects__list{
+        grid-template-columns: 100%;
+        @apply w-full p-0 gap-0 mt-20;
+    }
+    .project{
+        @apply rounded-none w-full shadow-none;
     }
 }

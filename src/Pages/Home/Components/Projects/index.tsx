@@ -1,10 +1,15 @@
 import './Projects.css';
 import { ProjectsProps } from './Projects.props';
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Projects: React.FC<ProjectsProps> = ()=>{
     return <section className='projects'>
     <h2 className='projects__headline'>Proyectos</h2>
     <ul className='projects__list'>
+        <li className='project'>
+            <p>Explora algunos de los proyectos más significativos que he desarrollado</p>
+            <FaLongArrowAltRight className='project__icon'/>
+        </li>
         <li className='project'>
             <img src="https://res.cloudinary.com/dbquvfvvk/image/upload/v1718214667/portfolio/prurfcocftiiv5t79rbd.jpg" alt="" />
         </li>
