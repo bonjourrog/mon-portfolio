@@ -92,7 +92,8 @@
         @apply mt-0;
     }
     .projects__headline{
-        @apply mb-0 pl-20;
+        font-size: 15vw;
+        @apply w-full text-center mb-0 p-0;
     }
 }
 @media screen and (max-width:600px) {

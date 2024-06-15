@@ -19,3 +19,31 @@
 .experience>ul>li>span{
     @apply absolute right-0 top-0 text-blue-400 text-sm;
 }
+@media screen and (max-width:800px) {
+    .experience__headline{
+        font-size: 15vw;
+        @apply w-full text-center p-0 m-0;
+    }
+}
+@media screen and (max-width:600px) {
+    .experience>ul{
+        @apply gap-0;
+    }
+    .experience>ul>li{
+        @apply flex-col pl-8 pb-20 border-l-2 border-black;
+    }
+    .experience>ul>li:last-child{
+        @apply pb-0;
+    }
+    .experience>ul>li::after{
+        content:  "";
+        background-color: #1f1e1d;
+        @apply absolute w-5 h-5 border border-black rounded-full top-0 -left-[.7em];
+    }
+    .experience>ul>li>p{
+        @apply p-0;
+    }
+    .experience>ul>li>span{
+        @apply relative;
+    }
+}
