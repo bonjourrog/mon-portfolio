@@ -37,3 +37,54 @@
 .socials__icon:hover{
     @apply opacity-100;
 }
+@media screen and (max-width:1300px) {
+    .socials{
+        @apply w-72;
+    }
+}
+@media screen and (max-width:1024px) {
+    .contact > div{
+        @apply w-full;
+    }
+    .form{
+        @apply w-full justify-center;
+    }
+    .socials{
+        @apply right-0 w-auto h-auto p-4 pb-10 rounded-none rounded-l-md;
+    }
+    .socials>h2{
+        @apply hidden;
+    }
+    .socials>div{
+        @apply flex-col;
+    }
+}
+@media screen and (max-width:650px) {
+    .contact__headline{
+        font-size: 15vw;
+        @apply w-full text-center;
+    }
+    .socials>h2{
+        @apply block;
+    }
+    .socials{
+        @apply relative w-80 mt-40 rounded-none rounded-r-md;
+    }
+    .socials>div{
+        @apply flex-row;
+    }
+    .contact > div{
+        @apply m-0 pb-0 shadow-none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .socials>h2{
+        @apply hidden;
+    }
+    .socials{
+        @apply w-full rounded-none mt-16;
+    }
+    .socials>div{
+        @apply justify-center;
+    }
+}
