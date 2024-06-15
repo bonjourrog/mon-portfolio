@@ -3,7 +3,7 @@
     @apply relative flex justify-center items-center flex-col gap-4 w-full;
 }
 .nick{
-    @apply absolute top-0 text-[17vw] font-extrabold z-0 opacity-[.05];
+    @apply absolute top-1/2 transform -translate-y-3/4 text-[17vw] font-extrabold z-0 opacity-[.05];
 }
 .hero__content{
     @apply flex flex-col justify-start items-start gap-10 w-[35em];
@@ -33,8 +33,23 @@
 .tech-item{
     font-size: 5em;
 }
+@media screen and (max-width:1024px) {
+    .nick{
+        @apply hidden;
+    }
+}
 @media screen and (max-width:650px) {
     .hero__content{
         @apply w-full px-10;
+    }
+}
+@media screen and (max-width:800px) {
+    .tech-item{
+        @apply text-5xl;
+    }
+}
+@media screen and (max-width:450px) {
+    .tech-item{
+        @apply text-4xl;
     }
 }
