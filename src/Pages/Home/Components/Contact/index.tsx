@@ -11,7 +11,12 @@ const Contact:React.FC<ContactProps> = ()=>{
         message: Yup.string().required("Ingrese un mensaje").min(10, "El mensaje es demasiado corto")
     });
     return <section className='contact'>
-    <Formik initialValues={{name:'', email:'', message:''}} validationSchema={validateSchema} onSubmit={(values, {resetForm, setSubmitting})=>{}}>
+    <Formik initialValues={{name:'', email:'', message:''}} validationSchema={validateSchema} onSubmit={(values, {resetForm, setSubmitting})=>{
+        console.log(values);
+        resetForm()
+        setSubmitting(true)
+        
+    }}>
         <div>
             <Form className='form'>
                 <h2 className='contact__headline'>Contacto</h2>

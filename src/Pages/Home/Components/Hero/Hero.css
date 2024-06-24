@@ -36,6 +36,15 @@
 @media screen and (max-width:1024px) {
     .nick{
         @apply hidden;
+        /* @apply top-8 left-8 transform-none text-lg opacity-40; */
+    }
+}
+@media screen and (max-width:800px) {
+    .hero__content{
+        @apply mb-20 gap-0;
+    }
+    .hero__name{
+        @apply mb-10;
     }
 }
 @media screen and (max-width:650px) {

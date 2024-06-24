@@ -51,13 +51,20 @@
     @apply block w-full pl-40 mb-40 text-9xl font-extrabold opacity-100 text-[#1f1e1d];
 }
 @media screen and (max-width:1024px) {
+    .projects{
+        @apply h-auto;
+    }
     .projects__list{
-        width: 80%;
-        grid-template-columns: repeat(auto-fill, minmax(20em, 2fr));
+        width: 90%;
+        height: auto;
+        /* grid-template-columns: repeat(auto-fill, minmax(20em, 2fr)); */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 3em;
     }
     .project{
-        @apply w-full h-auto;
+        width: 100%;
+        height: 100%
+        @apply w-full;
     }
     .project:last-child{
         animation: none;
@@ -71,13 +78,20 @@
 }
 @media screen and (max-width:800px) {
     .projects__list{
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        grid-template-columns: 80%;
+        height: auto;
         justify-content: center;
         gap: 0;
     }
-    .project{   
-        @apply m-0 rounded-none;
+    .project{
+        @apply h-auto m-0 rounded-none;
+    }
+    .project>img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
     }
     .project:nth-child(2){
         animation: none;
