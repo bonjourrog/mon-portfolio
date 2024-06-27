@@ -37,6 +37,12 @@
 .socials__icon:hover{
     @apply opacity-100;
 }
+.form__button{
+    @apply w-96 px-10 py-3 border border-[#1f1e1d] rounded-sm bg-[#1f1e1d] text-white;
+}
+.form__button:hover{
+    @apply shadow-sm bg-[#292a2d];
+}
 @media screen and (max-width:1300px) {
     .socials{
         @apply w-72;

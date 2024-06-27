@@ -33,7 +33,8 @@ const Contact:React.FC<ContactProps> = ()=>{
                 <br />
                 <Field className='form__field form__field--textarea' name='message' type='text' component='textarea' placeholder='Mensaje'/>
                 <ErrorMessage component={'span'} className='error-msg' name='message'/>
-                <button type='submit'>Enviar</button>
+                <br />
+                <button className='form__button' type='submit'>Enviar</button>
             </Form>
             <div className='socials'>
                 <h2>Socials</h2>
