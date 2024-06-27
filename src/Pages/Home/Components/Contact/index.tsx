@@ -4,16 +4,33 @@ import { Form, Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { FaLinkedin, FaGithubSquare, FaInstagramSquare } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
+import { MdOutlineDone } from "react-icons/md";
+import { useRef } from 'react';
 
 const Contact:React.FC<ContactProps> = ()=>{
+    const messageRef = useRef<HTMLParagraphElement|null>(null);
+    const showMessage = ()=>{
+        const current = messageRef.current;
+        if(current){
+            current.style.bottom='3em'
+            setTimeout(()=>{
+                current.style.bottom ='-2.5em';
+            }, 3000)
+        }
+    }
     const validateSchema = Yup.object().shape({
         from_name:Yup.string().required("Ingrese su nombre").min(3, "El nombre es demasiado corto"),
         reply_to:Yup.string().required("Ingrese un correo").email("Ingrese un correo valido"),
         message: Yup.string().required("Ingrese un mensaje").min(10, "El mensaje es demasiado corto")
     });
     return <section className='contact'>
+    <p className='mail-send' ref={messageRef}>
+        <MdOutlineDone className='mail-send__icon'/>
+        Mensaje enviado
+    </p>
     <Formik initialValues={{from_name:'', reply_to:'', message:''}} validationSchema={validateSchema} onSubmit={(values, {resetForm, setSubmitting})=>{
         emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, values, import.meta.env.VITE_PUBLIC_ID).then(()=>{
+            showMessage();
             setSubmitting(false)
             resetForm()
         }).catch(error=>{
