@@ -1,0 +1,18 @@
+.resume{
+    @apply flex items-center justify-center w-full h-screen bg-[#1f1e1d] text-zinc-800;
+}
+.resume__card{
+    @apply flex flex-col justify-start items-center gap-6 p-16 bg-white  rounded-md;
+}
+.resume__headline{
+    @apply text-5xl font-extrabold text-center;
+}
+.resume__caption{
+    @apply text-center text-zinc-600 font-thin italic text-sm;
+}
+.resume__download{
+    @apply flex items-center gap-2 mt-10 py-2 px-10 border-[.1em] border-[#1f1e1d] rounded-md font-bold transition-all duration-300 ease-in-out;
+}
+.resume__download:hover{
+    @apply bg-[#1f1e1d] text-white shadow-md;
+}
