@@ -56,15 +56,15 @@ const Contact:React.FC<ContactProps> = ()=>{
             <div className='socials'>
                 <h2>Socials</h2>
                 <div>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/rogeliobeltran/" target='_blank'>
                         <FaLinkedin className='socials__icon'/>
                     </a>
-                    <a href="">
+                    <a href="https://github.com/bonjourrog/bonjourrog" target='_blank'>
                         <FaGithubSquare className='socials__icon'/>
                     </a>
-                    <a href="">
+                    {/* <a href="">
                         <FaInstagramSquare className='socials__icon'/>
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </div>
