@@ -32,16 +32,22 @@
     @apply font-extrabold text-3xl;
 }
 .socials__icon{
-    @apply text-4xl opacity-60 transition-all duration-300 ease-in-out;
+    @apply text-4xl transition-all duration-300 ease-in-out;
+}
+.socials__icon:hover{
+    @apply opacity-80;
+}
+.socials__link{
+    @apply transition-all duration-300 ease-in-out;
+}
+.socials__link:hover{
+    @apply transform scale-110;
 }
 .socials>div>a{
     @apply cursor-pointer;
 }
 .socials>div{
     @apply flex mt-8 gap-6;
-}
-.socials__icon:hover{
-    @apply opacity-100;
 }
 .form__button{
     @apply w-96 px-10 py-3 border border-[#1f1e1d] rounded-sm bg-[#1f1e1d] text-white;
