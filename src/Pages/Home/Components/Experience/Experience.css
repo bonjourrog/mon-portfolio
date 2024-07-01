@@ -5,10 +5,41 @@
     @apply block w-full pl-40 text-8xl font-extrabold;
 }
 .experience>ul{
-    @apply flex flex-col items-start justify-start gap-28 w-3/4 h-full mx-auto mt-40;
+    @apply flex flex-col items-start justify-start gap-20 w-3/4 h-full mx-auto mt-40;
 }
 .experience>ul>li{
-    @apply relative w-full;
+    animation: move linear;
+    animation-timeline: view();
+    animation-direction: both;;
+    animation-range: entry 0% cover 20%;
+    @apply relative w-1/2 min-h-20 p-10 rounded-md transition-all duration-300 ease-in-out;
+}
+@keyframes move{
+    from{
+        opacity: 0;
+        transform: translateX(-10em);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0em);
+    }
+}
+.experience>ul>li:nth-child(2){
+    animation: move-r linear;
+    animation-timeline: view();
+    animation-direction: both;;
+    animation-range: entry 0% cover 20%;
+    @apply self-end;
+}
+@keyframes move-r{
+    from{
+        opacity: 0;
+        transform: translateX(10em);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0em);
+    }
 }
 .experience>ul>li>h3{
     @apply text-2xl font-bold;
@@ -17,9 +48,18 @@
     @apply pl-10 font-thin italic;
 }
 .experience>ul>li>span{
-    @apply absolute right-0 top-0 text-blue-400 text-sm;
+    @apply absolute right-0 top-10 text-blue-400 text-sm;
 }
 @media screen and (max-width:800px) {
+    .experience>ul{
+        @apply items-center;
+    }
+    .experience>ul>li:nth-child(2){
+        @apply self-center;
+    }
+    .experience>ul>li>span{
+        @apply top-0;
+    }
     .experience__headline{
         font-size: 15vw;
         @apply w-full text-center p-0 m-0;

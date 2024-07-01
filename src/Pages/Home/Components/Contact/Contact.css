@@ -77,6 +77,11 @@
         @apply flex-col;
     }
 }
+@media screen and (max-width:800px) {
+    .contact > div{
+        @apply top-0;
+    }
+}
 @media screen and (max-width:650px) {
     .contact__headline{
         font-size: 15vw;
