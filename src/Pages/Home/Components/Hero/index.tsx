@@ -3,6 +3,7 @@ import { HeroProps } from './props';
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaCss3, FaFigma, FaWordpress, FaGithub, FaLongArrowAltRight, FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { Link } from 'react-scroll';
 
 const Hero: React.FC<HeroProps> = ()=>{
     return <section className='hero'>
@@ -11,10 +12,10 @@ const Hero: React.FC<HeroProps> = ()=>{
             <p className='hero__career'>Frontend developer</p>
             <h1 className='hero__name'>Rogelio Beltran</h1>
             <p className='hero__description'>Desarrollador web experiencia en la creacion de sitios web con wordpress, angular y react, también he colaborado en proyectos en los que he trabajado como full stack con Golang, Angular y MongoDB</p>
-                <button className='see-p'>
+                <Link to='projects' smooth={true} className='see-p'>
                     <p>Ver Proyectos</p>
                     <FaLongArrowAltRight/>
-                </button>
+                </Link>
         </div>
         <ul className='tech-list'>
             <li><FaReact className='tech-item'/></li>
