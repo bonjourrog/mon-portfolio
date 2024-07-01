@@ -2,7 +2,7 @@ import './Contact.css';
 import { ContactProps } from './Contact.props';
 import { Form, Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { FaLinkedin, FaGithubSquare, FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 import { MdOutlineDone } from "react-icons/md";
 import { useRef } from 'react';
