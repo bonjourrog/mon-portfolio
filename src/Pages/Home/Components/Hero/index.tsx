@@ -12,7 +12,7 @@ const Hero: React.FC<HeroProps> = ()=>{
             <p className='hero__career'>Frontend developer</p>
             <h1 className='hero__name'>Rogelio Beltran</h1>
             <p className='hero__description'>Desarrollador web experiencia en la creacion de sitios web con wordpress, angular y react, también he colaborado en proyectos en los que he trabajado como full stack con Golang, Angular y MongoDB</p>
-                <Link to='projects' smooth={true} className='see-p'>
+                <Link to='proposal2' smooth={true} className='see-p'>
                     <p>Ver Proyectos</p>
                     <FaLongArrowAltRight/>
                 </Link>

@@ -1,0 +1,102 @@
+.proposal2{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 100%;
+    min-height: 120vh;
+    max-height: 120vh;
+    overflow: hidden;
+    background-color: white;
+    box-shadow:  0em 0em 2em 1em rgba(0, 0, 0, 0.326) inset;
+}
+.proposal2__header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0em;
+    background-color: white;
+    color: black;
+    z-index: 2;
+}
+.proposal2>div{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 100%;
+    height: 100%;
+}
+.proposal2__header>h2{
+    color: black;
+    padding: 1em .5em;
+    font-weight: 900;
+    font-size: 3em;
+    display: block;
+    background-color: white;
+    z-index: 10;
+}
+.row{
+    display: flex;
+    width: 100%;
+    gap: 3em;
+    transform: rotate(-10deg) translateX(-2em) translateY(-5em);
+    transition: all .3s ease-in-out;
+}
+.row--first{
+    animation: move-left 60s linear infinite;
+}
+@keyframes move-left{
+    0%{transform: rotate(-10deg) translateX(-2em) translateY(-5em);}
+    100%{transform: rotate(-10deg) translateX(-154em) translateY(-5em);}
+}
+.row--second{
+    animation: move-right 90s linear infinite;
+}
+@keyframes move-right{
+    0%{transform: rotate(-10deg) translateX(-154em) translateY(-5em);}
+    100%{transform: rotate(-10deg) translateX(-2em) translateY(-5em);}
+}
+.row--third{
+    animation: move-left 90s linear infinite;
+}
+@keyframes move-left{
+    0%{transform: rotate(-10deg) translateX(-2em) translateY(-5em);}
+    100%{transform: rotate(-10deg) translateX(-154em) translateY(-5em);}
+}
+.row>a{
+    flex: 0 0 auto;
+    width: 35em;
+    height: 25em;
+    border: .2em solid white;
+    border-radius: .3em;
+    overflow: hidden;
+    box-shadow: .3em .3em 1em rgba(0, 0, 0, 0.262);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.row>a:hover{
+    transform: scale(1.1);
+    margin: 0em .3em;
+}
+.row>a>img{
+    width: 100%;
+    object-fit: contain;
+    transition: all .3s ease-in-out;
+}
+.row>a:hover>img{
+    transform: scale(1.1);
+}
+@media screen and (max-width:600px) {
+    .row>a{
+        width: 25em;
+        height: 15em;
+    }
+    @keyframes move-left{
+        0%{transform: rotate(-10deg) translateX(-2em) translateY(-5em);}
+        100%{transform: rotate(-10deg) translateX(-114em) translateY(-5em);}
+    }
+    @keyframes move-right{
+        0%{transform: rotate(-10deg) translateX(-114em) translateY(-5em);}
+        100%{transform: rotate(-10deg) translateX(-2em) translateY(-5em);}
+    }
+}
