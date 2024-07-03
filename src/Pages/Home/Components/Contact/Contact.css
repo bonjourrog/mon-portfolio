@@ -50,7 +50,7 @@
     @apply flex mt-8 gap-6;
 }
 .form__button{
-    @apply w-96 px-10 py-3 border border-[#1f1e1d] rounded-sm bg-[#1f1e1d] text-white;
+    @apply w-96 px-10 py-3 border border-[#1f1e1d] rounded-md bg-[#1f1e1d] text-white;
 }
 .form__button:hover{
     @apply shadow-sm bg-[#292a2d];
@@ -97,7 +97,7 @@
         @apply flex-row;
     }
     .contact > div{
-        @apply m-0 pb-0 shadow-none;
+        @apply m-0 pb-0 shadow-none rounded-none;
     }
 }
 @media screen and (max-width: 400px) {

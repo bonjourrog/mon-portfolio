@@ -12,9 +12,11 @@ const Contact:React.FC<ContactProps> = ()=>{
     const showMessage = ()=>{
         const current = messageRef.current;
         if(current){
-            current.style.bottom='3em'
+            current.style.bottom='4em';
+            current.style.opacity = '1';
             setTimeout(()=>{
                 current.style.bottom ='-2.5em';
+                current.style.opacity = '0';
             }, 3000)
         }
     }
