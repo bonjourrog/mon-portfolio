@@ -92,11 +92,11 @@
         height: 15em;
     }
     @keyframes move-left{
-        0%{transform: rotate(-10deg) translateX(-2em) translateY(-5em);}
-        100%{transform: rotate(-10deg) translateX(-114em) translateY(-5em);}
+        0%{transform: rotate(-10deg) translateX(-2em) translateY(3em);}
+        100%{transform: rotate(-10deg) translateX(-114em) translateY(3em);}
     }
     @keyframes move-right{
-        0%{transform: rotate(-10deg) translateX(-114em) translateY(-5em);}
-        100%{transform: rotate(-10deg) translateX(-2em) translateY(-5em);}
+        0%{transform: rotate(-10deg) translateX(-114em) translateY(3em);}
+        100%{transform: rotate(-10deg) translateX(-2em) translateY(3em);}
     }
 }
