@@ -16,3 +16,17 @@
 .resume__download:hover{
     @apply bg-[#1f1e1d] text-white shadow-md;
 }
+@media screen and (max-width:6000px) {
+    .resume{
+        @apply mt-32;
+    }
+    .resume__headline{
+        @apply text-4xl;
+    }
+    .resume__card{
+        @apply w-11/12 py-8;
+    }
+    .resume__download{
+        @apply mt-3;
+    }
+}
