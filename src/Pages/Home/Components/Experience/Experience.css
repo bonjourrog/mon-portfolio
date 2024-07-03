@@ -5,14 +5,14 @@
     @apply block w-full pl-40 text-8xl font-extrabold;
 }
 .experience>ul{
-    @apply flex flex-col items-start justify-start gap-20 w-3/4 h-full mx-auto mt-40;
+    @apply flex flex-col items-start justify-start gap-20 w-3/4 h-full mx-auto mt-10;
 }
 .experience>ul>li{
     animation: move linear;
     animation-timeline: view();
-    animation-direction: both;;
+    animation-direction: both;
     animation-range: entry 0% cover 20%;
-    @apply relative w-1/2 min-h-20 p-10 rounded-md transition-all duration-300 ease-in-out;
+    @apply relative w-1/2 min-h-20 p-10  transition-all duration-300 ease-in-out;
 }
 @keyframes move{
     from{
@@ -66,24 +66,30 @@
     }
 }
 @media screen and (max-width:600px) {
+    .experience{
+        @apply h-auto pb-10; 
+    }
     .experience>ul{
         @apply gap-0;
     }
     .experience>ul>li{
-        @apply flex-col pl-8 pb-20 border-l-2 border-black;
+        @apply flex-col p-0 pl-8 pb-10 border-l border-white;
+    }
+    .experience>ul>li>h3{
+        @apply font-thin;
     }
     .experience>ul>li:last-child{
         @apply pb-0;
     }
     .experience>ul>li::after{
         content:  "";
-        background-color: #1f1e1d;
-        @apply absolute w-5 h-5 border border-black rounded-full top-0 -left-[.7em];
+        background-color: rgb(148, 166, 255);
+        @apply absolute w-2 h-2  rounded-full top-0 -left-[.29em];
     }
     .experience>ul>li>p{
-        @apply p-0;
+        @apply p-0 text-zinc-400 text-sm;
     }
     .experience>ul>li>span{
-        @apply relative;
+        @apply relative text-xs;
     }
 }
