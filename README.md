@@ -10,7 +10,7 @@ Contenido
 
 Aquí algunos de mis proyectos más destacados:
 
-* Fluxy app - Colabora en este proyecto creando nuevas funcionalidades tanto en el back end como en el frontend, también implemente diseños usando tailwind y Angular. Las tecnologías que se usaron para este proyecto fueron Golang, Angular, Tailwindcss, MongoDB
+* Fluxy app - Colabore en este proyecto creando nuevas funcionalidades tanto en el backend como en el frontend, también implemente diseños usando tailwind y Angular. Las tecnologías que se usaron para este proyecto fueron Golang, Angular, Tailwindcss, MongoDB
 
 * Blue Bay Car Rental Website - Cree este sitio web para una agencia d erenta de autos en puerto peñasco, Las tecnologías usadas en esta web fueron Reactjs, Css y Firebase.
 
