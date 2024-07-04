@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# Portafolio Web de [Tu Nombre]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el repositorio de mi portafolio web, donde presento mis habilidades como desarrollador front-end y algunos de mis proyectos destacados.
 
-Currently, two official plugins are available:
+Contenido
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+¡Hola! Soy Rogelio, desarrollador frontend con mas de un año de experiencia en la creación de sitios web y colaboración en aplicaciones web y apasionado por crear webs intuitivas y atractivas.
 
-## Expanding the ESLint configuration
+## Proyectos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Aquí algunos de mis proyectos más destacados:
 
-- Configure the top-level `parserOptions` property like this:
+* Fluxy app - Colabora en este proyecto creando nuevas funcionalidades tanto en el back end como en el frontend, también implemente diseños usando tailwind y Angular. Las tecnologías que se usaron para este proyecto fueron Golang, Angular, Tailwindcss, MongoDB
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+* Blue Bay Car Rental Website - Cree este sitio web para una agencia d erenta de autos en puerto peñasco, Las tecnologías usadas en esta web fueron Reactjs, Css y Firebase.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+* Joyat - Realice un sitio web para la empresa de joyat, un empresa dedicada a la inmobiliara. el sitio web se creo para mostrar terrenos en venta. Las tecnologías usadas en esta web fueron Reactjs, Css y Firebase.
+
+## Tecnologías
+
+HTML5, CSS3, JavaScript
+Frameworks: Reactjs, Angular
+Control de Versiones: Git, GitHub
+
+## Contacto
+
+Email: hello@bonjourog.com
+LinkedIn: [Rogelio Beltran](https://www.linkedin.com/in/rogeliobeltran/)
+Sitio web: [bonjourog.com](https://bonjourog.com)
+¡Gracias por visitar mi portafolio! Estoy emocionado por conectar y explorar oportunidades de colaboración y desarrollo web.
