@@ -1,4 +1,4 @@
-# Portafolio Web de [Tu Nombre]
+# Mi portafolio web
 
 Este es el repositorio de mi portafolio web, donde presento mis habilidades como desarrollador front-end y algunos de mis proyectos destacados.
 
