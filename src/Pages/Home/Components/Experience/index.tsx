@@ -18,7 +18,7 @@ const Experience: React.FC<ExperienceProps> = ()=>{
         <li>
             <h3>Blue Bay</h3>
             <p>Dessarrollador Web</p>
-            <span>Ene 2024 - Actualmente</span>
+            <span>Ene 2024 - Dic 2024</span>
         </li>
     </ul>
 </section>
